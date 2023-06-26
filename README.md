@@ -12,4 +12,7 @@ disponibiliza, nao e nada muito avancado, pelo contrario e apenas o primeiro pas
 No final do dia apenas para aprendizado decidi fazer o crud com python
 <h2>Dia 02:</h2>
     O segundo dia foi um desastre em alguns pontos de vista, todo o progresso que tive <strong>(bem
-    grande por sinal)</strong> foi perdido por erros, mas, e neste momento que perseveramos, entao vamos ao dia tres, repetindo tudo que fizemos no dia 01, mas vamos nessa
+    grande por sinal)</strong> foi perdido por erros, mas, e neste momento que perseveramos, entao vamos ao dia tres, repetindo tudo que fizemos no dia 01, mas vamos nessa.
+
+<h2>Dia 03:</h2>
+    comecamos o dia tentando lembrar de todos os metodos e avancos feitos no dia anterior, testamos para ver se existem erros residuais no codigo atual e a partir disso comecamos a recriar tudo, a tela de login, e os metodos que sumiram
