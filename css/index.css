@@ -1,0 +1,8 @@
+:root{
+    --roxo: rgba(84,37,131);
+    --gold: rgba(253,184,39);
+}
+
+*{
+    background-color: var(--roxo);
+}
