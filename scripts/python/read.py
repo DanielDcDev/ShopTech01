@@ -1,9 +1,13 @@
 from flask import Flask, jsonify
 import mysql.connector
+from flask_cors import CORS
+
+
+
 
 app = Flask(__name__)
-
-@app.route('/', methods=['GET'])
+CORS(app)
+@app.route('/')
 def obter_dados():
     # Conectar ao banco de dados
     cnx = mysql.connector.connect(
@@ -36,11 +40,10 @@ def obter_dados():
     # Fechar a conexão com o banco de dados
     cursor.close()
     cnx.close()
-    print(jsonify(dados))
     # Retornar os dados como resposta em formato JSON
     return jsonify(dados)
 
 if __name__ == '__main__':
-    app.run(port=3306, host='127.0.0.1', debug=True, threaded=True)
+    app.run(port=5000, host='127.0.0.1', debug=True, threaded=True)
 
 

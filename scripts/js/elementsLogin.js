@@ -27,9 +27,18 @@ let dropdown = document.createElement("ul");
 let dCountry = document.createElement("li");
 dCountry.innerHTML = "Country";
 // criando os paises
-let c1 = document.createElement("li")
-c1.setAttribute("data-val","BR");
-c1.innerHTML = "Brasil"
+
+
+fetch('http://localhost:5000/')
+  .then(response => response.json())
+  .then(data => {
+    const dado = data.jsonify(dados);
+    console.log(dado);
+  })
+  .catch(error => {
+    console.error('Ocorreu um erro:', error);
+  });
+
 
     
 
