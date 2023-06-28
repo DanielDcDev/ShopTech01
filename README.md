@@ -18,5 +18,5 @@ No final do dia apenas para aprendizado decidi fazer o crud com python
     comecamos o dia tentando lembrar de todos os metodos e avancos feitos no dia anterior, testamos para ver se existem erros residuais no codigo atual e a partir disso comecamos a recriar tudo, a tela de login, e os metodos que sumiram.<br>
     O que realmente fiz no dia de hoje foi mais um estudo, aprendi como criar um dropbox com todos os paises do mundo, amannha pretendo criar um banco de dados com todos os paises e suas siglas, e pegar estes paises e colocar num dropbox. hoje estudei bastante mas acredito que com esforco consegurei mais ainda.
     
-<h2>Dia 03:</h2>
-
+<h2>Dia 04:</h2>
+Para inicio sofri algumas dificuldades em relacao ao sdk do python
