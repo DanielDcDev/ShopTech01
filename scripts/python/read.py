@@ -1,23 +1,46 @@
-import json
+from flask import Flask, jsonify
 import mysql.connector
 
-# Conectar ao banco de dados
-cnx = mysql.connector.connect(
-    host='localhost',
-    user='root',
-    password='',
-    database='country'
-)
-# Obter os resultados da consulta
-results = cursor.fetchall()
+app = Flask(__name__)
 
-data = []
-for row in results:
-    data.append({ 'nome': row[1], 'sigla': row[2]})
+@app.route('/', methods=['GET'])
+def obter_dados():
+    # Conectar ao banco de dados
+    cnx = mysql.connector.connect(
+        host='localhost',
+        user='root',
+        password='',
+        database='country'
+    )
 
-json_data = json.dumps(data)
-cursor.close()
-cnx.close()
+    # Executar uma consulta SQL para obter os dados desejados
+    cursor = cnx.cursor()
+    query = 'SELECT * FROM paises'
+    cursor.execute(query)
 
-# Imprimir os resultados como resposta
-print(json_data)
+    # Obter os resultados da consulta
+    results = cursor.fetchall()
+
+    # Criar uma lista para armazenar os dados
+    dados = []
+    for row in results:
+        # Criar um dicionário para cada linha de dados
+        # Adaptar as chaves conforme a estrutura da sua tabela
+        dado = {
+            'id': row[0],
+            'nome': row[1],
+            'sigla': row[2]
+        }
+        dados.append(dado)
+
+    # Fechar a conexão com o banco de dados
+    cursor.close()
+    cnx.close()
+    print(jsonify(dados))
+    # Retornar os dados como resposta em formato JSON
+    return jsonify(dados)
+
+if __name__ == '__main__':
+    app.run(port=3306, host='127.0.0.1', debug=True, threaded=True)
+
+
