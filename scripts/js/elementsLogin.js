@@ -32,24 +32,32 @@ dropdown.innerHTML = "Country";
 fetch('http://localhost:5000/')
   .then(response => response.json())
   .then(data => {
-    //console.log(data); 
     var dado = data;
     if (dado.length > 1) {
-      console.log(dado[1].nome); // Acessar a propriedade 'nome' se existir
-      console.log(dado.length); // Acessar a propriedade 'nome' se existir
+      console.log(dado[1].nome);
+      console.log(dado.length);
     } else {
       console.log("O array 'dado' não possui elementos suficientes.");
     }
-    //atribuiçoes dos paises ao dropbox
-      for (let i = 0; i < dado.length; i++) {
-        let Country =
-        Country.setAttribute("value",dado[i].nome);
-        
-      }
+
+    // Criação do dropdown (select)
+    var selectElement = document.createElement('select');
+
+    // Atribuição das opções ao dropdown
+    for (let i = 0; i < dado.length; i++) {
+      var optionElement = document.createElement('option');
+      optionElement.value = dado[i].nome;
+      optionElement.text = dado[i].nome;
+      selectElement.appendChild(optionElement);
+    }
+
+    // Adiciona o dropdown ao elemento do DOM desejado
+    optionElement.appendChild(dropdown);
   })
   .catch(error => {
     console.error('Ocorreu um erro:', error);
   });
+
 
 
     
