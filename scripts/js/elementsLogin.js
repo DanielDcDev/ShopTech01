@@ -1,4 +1,5 @@
-
+var dado = [];
+let Country = 0;
 let form = document.createElement("form");
 
 // cria um elemento input para o campo nome
@@ -23,17 +24,28 @@ sexo.setAttribute("name", "sexo");
         feminino.setAttribute("value", "F");
         feminino.innerHTML = "Female";
 
-let dropdown = document.createElement("ul");
-let dCountry = document.createElement("li");
-dCountry.innerHTML = "Country";
+let dropdown = document.createElement("select");
+dropdown.innerHTML = "Country";
 // criando os paises
 
 
 fetch('http://localhost:5000/')
   .then(response => response.json())
   .then(data => {
-    const dado = data.jsonify(dados);
-    console.log(dado);
+    //console.log(data); 
+    var dado = data;
+    if (dado.length > 1) {
+      console.log(dado[1].nome); // Acessar a propriedade 'nome' se existir
+      console.log(dado.length); // Acessar a propriedade 'nome' se existir
+    } else {
+      console.log("O array 'dado' não possui elementos suficientes.");
+    }
+    //atribuiçoes dos paises ao dropbox
+      for (let i = 0; i < dado.length; i++) {
+        let Country =
+        Country.setAttribute("value",dado[i].nome);
+        
+      }
   })
   .catch(error => {
     console.error('Ocorreu um erro:', error);
@@ -42,7 +54,7 @@ fetch('http://localhost:5000/')
 
     
 
-dropdown.appendChild(dCountry)
+//dropdown.appendChild(dCountry)
 // adiciona as opções ao select sexo
 sexo.appendChild(masculino);
 sexo.appendChild(feminino);
