@@ -1,5 +1,4 @@
 var dado = [];
-let Country = 0;
 let form = document.createElement("form");
 
 // cria um elemento input para o campo nome
@@ -17,22 +16,17 @@ login.setAttribute("placeholder", "Login");
 // cria um elemento select para o campo sexo
 let sexo = document.createElement("select");
 sexo.setAttribute("name", "sexo");
-    let masculino = document.createElement("option");
-    masculino.setAttribute("value", "M");
-    masculino.innerHTML = "Male";
-        let feminino = document.createElement("option");
-        feminino.setAttribute("value", "F");
-        feminino.innerHTML = "Female";
-
-let dropdown = document.createElement("select");
-dropdown.innerHTML = "Country";
-// criando os paises
-
+let masculino = document.createElement("option");
+masculino.setAttribute("value", "M");
+masculino.innerHTML = "Male";
+let feminino = document.createElement("option");
+feminino.setAttribute("value", "F");
+feminino.innerHTML = "Female";
 
 fetch('http://localhost:5000/')
   .then(response => response.json())
   .then(data => {
-    var dado = data;
+    dado = data;
     if (dado.length > 1) {
       console.log(dado[1].nome);
       console.log(dado.length);
@@ -41,22 +35,28 @@ fetch('http://localhost:5000/')
     }
 
     // Criação do dropdown (select)
-    var selectElement = document.createElement('select');
-
+    var country = document.createElement('select');
     // Atribuição das opções ao dropdown
     for (let i = 0; i < dado.length; i++) {
       var optionElement = document.createElement('option');
       optionElement.value = dado[i].nome;
       optionElement.text = dado[i].nome;
-      selectElement.appendChild(optionElement);
+      optionElement.innerHTML = `${dado[i].nome}`;
+      country.appendChild(optionElement);
     }
-
-    // Adiciona o dropdown ao elemento do DOM desejado
-    optionElement.appendChild(dropdown);
+    
+    // adiciona todos os elementos criados ao form
+    form.appendChild(nome);
+    form.appendChild(login);
+    form.appendChild(sexo);
+    form.appendChild(country);
+    // adiciona o form à página
+    document.body.appendChild(form);
   })
   .catch(error => {
     console.error('Ocorreu um erro:', error);
   });
+
 
 
 
@@ -71,6 +71,6 @@ sexo.appendChild(feminino);
 form.appendChild(nome);
 form.appendChild(login);
 form.appendChild(sexo);
-form.appendChild(dropdown)
+form.appendChild(country)
 // adiciona o form à página
 document.body.appendChild(form);
