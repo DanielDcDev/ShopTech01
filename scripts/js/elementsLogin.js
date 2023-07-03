@@ -22,55 +22,79 @@ masculino.innerHTML = "Male";
 let feminino = document.createElement("option");
 feminino.setAttribute("value", "F");
 feminino.innerHTML = "Female";
+sexo.appendChild(masculino);
+sexo.appendChild(feminino);
 
+
+
+ //Dados alocados pelo banco de dados 
 fetch('http://localhost:5000/')
   .then(response => response.json())
   .then(data => {
     dado = data;
-    if (dado.length > 1) {
-      console.log(dado[1].nome);
-      console.log(dado.length);
-    } else {
-      console.log("O array 'dado' não possui elementos suficientes.");
-    }
-
+    var container = document.createElement('div');
     // Criação do dropdown (select)
     var country = document.createElement('select');
     // Atribuição das opções ao dropdown
+    
+
     for (let i = 0; i < dado.length; i++) {
       var optionElement = document.createElement('option');
       optionElement.value = dado[i].nome;
       optionElement.text = dado[i].nome;
       optionElement.innerHTML = `${dado[i].nome}`;
+      var flag = document.createElement('img');
+      flag.src = `https://purecatamphetamine.github.io/country-flag-icons/3x2/${dado[i].sigla}.svg`;
+
+
+      optionElement.appendChild(flag);
       country.appendChild(optionElement);
+      
     }
+    flag.style.backgroundRepeat = 'no-repeat';
+    flag.style.backgroundPosition = 'left center';
+    flag.style.display = 'flex';
+    container.style.display = "inline-block";
+    container.style.verticalAlign = "top"; 
+    flag.style.paddingLeft = '20px';
+    flag.style.width = '20px';
+    container.appendChild(country);
+    container.appendChild(flag);
+    form.appendChild(container);
     
-    // adiciona todos os elementos criados ao form
-    form.appendChild(nome);
-    form.appendChild(login);
-    form.appendChild(sexo);
-    form.appendChild(country);
-    // adiciona o form à página
-    document.body.appendChild(form);
   })
   .catch(error => {
     console.error('Ocorreu um erro:', error);
   });
 
-
-
-
-    
-
-//dropdown.appendChild(dCountry)
-// adiciona as opções ao select sexo
-sexo.appendChild(masculino);
-sexo.appendChild(feminino);
-
-// adiciona todos os elementos criados ao form
+  // adiciona todos os elementos criados ao form
 form.appendChild(nome);
 form.appendChild(login);
 form.appendChild(sexo);
-form.appendChild(country)
-// adiciona o form à página
+
+  // adiciona o form à página
 document.body.appendChild(form);
+
+
+
+// <![CDATA[ <-- For SVG support
+(function () {
+  function refreshCSS() {
+    var sheets = [].slice.call(document.getElementsByTagName("link"));
+    var head = document.getElementsByTagName("head")[0];
+    for (var i = 0; i < sheets.length; ++i) {
+      var elem = sheets[i];
+      var parent = elem.parentElement || head;
+      parent.removeChild(elem);
+      var rel = elem.rel;
+      if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+      }
+      parent.appendChild(elem);
+    }
+  }
+
+  refreshCSS();
+})();
+// ]]>
