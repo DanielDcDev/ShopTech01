@@ -54,7 +54,7 @@ fetch('http://localhost:5000/')
     flag.style.backgroundRepeat = 'no-repeat';
     flag.style.backgroundPosition = 'left center';
     flag.style.display = 'flex';
-    container.style.display = "inline-block";
+    container.style.display = "flex";
     container.style.verticalAlign = "top"; 
     flag.style.paddingLeft = '20px';
     flag.style.width = '20px';

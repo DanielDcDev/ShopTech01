@@ -6,3 +6,6 @@
 *{
     background-color: var(--roxo);
 }
+.containerAll,.welcome{
+    position : absolute;
+}

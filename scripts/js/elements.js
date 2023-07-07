@@ -1,3 +1,12 @@
+//recebendo as variaveis.
+var body = document.querySelector("body");
+//recebendo as variaveis.
+// var welcome = document.createElement("h2");
+// welcome.style.textAlign = "center";
+// welcome.setAttribut = ("id", "welcome");
+// welcome.innerHTML = "Welcome to Kobe Shop";
+// body.appendChild(welcome);
+
 // criar um novo elemento de lista
 var item = document.createElement("li");
 
@@ -34,7 +43,6 @@ img.addEventListener("click", function() {
 
 // adicionar o elemento à lista existente na página
 var lista = document.querySelector("ul");
-lista.style.possition = "flex";
 lista.style.width = "99.2%";
 lista.style.height = "35px";
 lista.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
@@ -43,4 +51,27 @@ lista.style.textAlign = "center";
 lista.appendChild(item);
 
 
+lista.style,zIndex = "0";
+//welcome.style,zIndex = "1";
 
+
+//criacao do corpo da pagina
+
+var main = document.getElementById("main");
+main.style.textAlign = "center";
+var title = document.createElement("h1");
+title.innerHTML = "Kobe Shop";
+var image = document.createElement("img");
+image.src = "/image/mamba.png";
+image.style.width = "25px";
+
+main.appendChild(image);
+main.appendChild(title);
+
+
+var text = document.createElement("h4");
+text.innerHTML = "Navigate through the website and find Kobe sneakers."
+
+text.style.textAlign = "center";
+
+main.appendChild(text);
