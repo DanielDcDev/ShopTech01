@@ -20,3 +20,6 @@ No final do dia apenas para aprendizado decidi fazer o crud com python
     
 <h2>Dia 04:</h2>
 Para inicio sofri algumas dificuldades em relacao ao sdk do python
+
+<h2>Dia 05:</h2>
+    Hoje consegui retomar o andamento do projeto, consegui criar o carrrosel do produto e posteriormente criei o link de uma pagina ainda em desenvolimento, parei pois necessitava estruturar bem o projeto para que nao chegasse em um estado mais avancado com erros, estou voltando a programacao do mesmo e assim irei continuar.
