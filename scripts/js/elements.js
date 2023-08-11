@@ -94,7 +94,7 @@ While wearing this sneaker, Kobe Bryant continues to earn more praise, even bein
 
 var kobe3 = document.createElement("img");
 kobe3.src = "/image/shoes/Adidas-KB8-III.jpg";
-kobe2.className = "shoes";
+kobe3.className = "shoes";
 kobe3desc = document.createElement("p");
 kobe3desc.textContent = `Released in 1999, the Adidas three stripes take on a new look on the side, while the wavy look we saw from the second Kobe shoe remains in the third installment. The Adidas KB8 III still has the adiPRENE cushioning and was the last in the Feet You Wear campaign.
 While wearing the Adidas KB8 III, Kobe Bryant, along with Shaquille O’Neal and Phil Jackson, as the new coach of the Lakers, won an NBA championship, the first for Kobe Bryant.`;
