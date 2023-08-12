@@ -77,8 +77,8 @@ text.style.textAlign = "center";
 
 main.appendChild(text);
 
-var divSlide = document.createElement("div");
-divSlide.className = "slide";
+
+
 
 //criacao das imagens
 var kobe1 = document.createElement("img");
@@ -89,17 +89,20 @@ kobe1desc.className = "shoes";
 kobe1desc.innerHTML = `<h3>Adidas EQT Elevation</h3>
 Although he started his rookie season with the Adidas EQT Elevation, the Adidas KB8 was Kobe’s first true signature shoe. It was designed with Kobe Bryant’s style of play in mind.
 Wearing the Adidas KB8, Kobe Bryant became the youngest All-Star at the time. Nearly 20 years later, fans are still rocking Kobe’s first signature shoe now renamed, “Crazy 8.”`
-var link = document.createElement("button");
-link.innerHTML = "Buy";
-link.className = "link";
-divSlide.appendChild(kobe1);
-divSlide.appendChild(kobe1desc);
-divSlide.appendChild(link);
-link.addEventListener("click",() => {
-  window.location = "/html/shoes/EQTE.html"
-})
-carrosel.appendChild(divSlide);
+  var divSlide = document.createElement("div");
+  divSlide.className = "slide";
+  var link = document.createElement("button");
+  link.innerHTML = "Buy";
+  link.className = "link";
+  divSlide.appendChild(kobe1);
+  divSlide.appendChild(kobe1desc);
+  divSlide.appendChild(link);
+  link.addEventListener("click",() =>{
+    window.location = "/html/shoes/EQTE.html";
+  })
 
+
+carrosel.appendChild(divSlide);
 
 var kobe2 = document.createElement("img");
 kobe2.src = "/image/shoes/Adidas-KB8-II.jpg";
@@ -109,6 +112,20 @@ kobe2desc.className = "shoes";
 kobe2desc.innerHTML = `<h3>Adidas KB8 II</h3>
 Kobe Bryant had become a rising superstar during his third NBA season. During this time, the Adidas KB8 II. It featured the adiPRENE heel cushion support system.
 While wearing this sneaker, Kobe Bryant continues to earn more praise, even being equated to Michael Jordan in a 1998 Rolling Stones article titled “Kobe Bryant: Teenager of the Year”. However, the NBA experienced a lockout season which was shortened to just 50 games.`
+  const divSlide2 = document.createElement('div');
+  divSlide2.className = "slide";
+  var link2 = document.createElement("button");
+  link2.innerHTML = "Buy";
+  link2.className = "link";
+  divSlide2.appendChild(kobe2);
+  divSlide2.appendChild(kobe2desc);
+  divSlide2.appendChild(link2);
+  link2.addEventListener("click",() =>{
+    window.location = "/html/shoes/KB82.html";
+  })
+
+  carrosel.appendChild(divSlide2);
+
 
 var kobe3 = document.createElement("img");
 kobe3.src = "/image/shoes/Adidas-KB8-III.jpg";
@@ -118,6 +135,22 @@ kobe3desc.className = "shoes";
 kobe3desc.innerHTML = `<h3>Adidas KB8 III </h3>
 Released in 1999, the Adidas three stripes take on a new look on the side, while the wavy look we saw from the second Kobe shoe remains in the third installment. The Adidas KB8 III still has the adiPRENE cushioning and was the last in the Feet You Wear campaign.
 While wearing the Adidas KB8 III, Kobe Bryant, along with Shaquille O’Neal and Phil Jackson, as the new coach of the Lakers, won an NBA championship, the first for Kobe Bryant.`;
+  const divSlide3 = document.createElement('div');
+  divSlide3.className = "slide";
+  var link3 = document.createElement("button");
+  link3.innerHTML = "Buy";
+  link3.className = "link";
+  divSlide3.appendChild(kobe3);
+  divSlide3.appendChild(kobe3desc);
+  divSlide3.appendChild(link3);
+  link3.addEventListener("click",() =>{
+    window.location = "/html/shoes/KB83.html";
+  })
+
+    carrosel.appendChild(divSlide3);  
+
+
+
 
 var kobe4 = document.createElement("img");
 kobe4.src = "/image/shoes/Adidas-The-Kobe.jpg";
