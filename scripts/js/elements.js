@@ -161,6 +161,20 @@ kobe4desc.innerHTML = `<h3>Adidas The Kobe</h3>
 With a unique molded upper that was designed to look like the Audi TT Roadster, many will remember the Adidas Kobe as the original space boots as they were released in 2000.
 While wearing the Adidas The Kobe, Kobe Bryant and the Lakers continued their winning streak from the previous year with another NBA Championship win against the Philadelphia 76ers.`;	
 
+  const divSlide4 = document.createElement('div');
+  divSlide4.className = "slide";
+  var link4 = document.createElement("button");
+  link4.innerHTML = "Buy";
+  link4.className = "link";
+  divSlide4.appendChild(kobe4);
+  divSlide4.appendChild(kobe4desc);
+  divSlide4.appendChild(link4);
+  link4.addEventListener("click",() =>{
+    window.location = "/html/shoes/ADDKobe.html";
+  })
+
+    carrosel.appendChild(divSlide4);  
+
 var kobe5 = document.createElement("img");
 kobe5.src = "/image/shoes/Adidas-The-Kobe-2.jpg";
 kobe5.className = "shoes";
@@ -169,6 +183,21 @@ kobe5desc.className = "shoes";
 kobe5desc.innerHTML = `<h3>Adidas The Kobe II</h3>
 Released in 2001, the Adidas Kobe 2 was the second installment of the space shoes. The shoes were not as sleek or as stylish as the previous pair of Adidas Kobe shoes.
 After beating the New Jersey Nets, Kobe Bryant earns a three-peat after winning his third NBA Championship at the age of 23. Sadly, the Kobe 2 is the last time Kobe would wear Adidas shoes.`;
+
+    const divSlide5 = document.createElement('div');
+    divSlide5.className = "slide";
+    var link5 = document.createElement("button");
+    link5.innerHTML = "Buy";
+    link5.className = "link";
+    divSlide5.appendChild(kobe5);
+    divSlide5.appendChild(kobe5desc);
+    divSlide5.appendChild(link5);
+    link5.addEventListener("click",() =>{
+      window.location = "/html/shoes/ADDKobe2.html";
+    })
+
+      carrosel.appendChild(divSlide5);  
+
 
 var kobe6 = document.createElement("img");
 kobe6.src = "/image/shoes/Nike-Zoom-Air-Huarache-2K4.jpg";
@@ -179,6 +208,20 @@ kobe6desc.innerHTML = `<h3>Nike Zoom Air Huarache 2K4</h3>
 As a result of his unhappiness with the Adidas The Kobe 2, Kobe Bryant left Adidas and became a “sneaker free agent”. He wore different sneakers including the player editions Jordans.
 After spending one NBA season as a sneaker free agent between 2002-2003, Kobe joined Nike and wore the Nike Zoom Air Huarache 2K4 for the first time during the 2003-2004 NBA season.`;
 
+const divSlide6 = document.createElement('div');
+    divSlide6.className = "slide";
+    var link6 = document.createElement("button");
+    link6.innerHTML = "Buy";
+    link6.className = "link";
+    divSlide6.appendChild(kobe6);
+    divSlide6.appendChild(kobe6desc);
+    divSlide6.appendChild(link6);
+    link6.addEventListener("click",() =>{
+      window.location = "/html/shoes/Air2k4.html";
+    })
+      carrosel.appendChild(divSlide6); 
+
+
 var kobe7 = document.createElement("img");
 kobe7.src = "/image/shoes/Nike-Zoom-Air-Huarache-2K5.jpg";
 kobe7.className = "shoes";
@@ -188,6 +231,19 @@ kobe7desc.innerHTML = `<h3>Nike Zoom Air Huarache 2K5</h3>
 Despite signing with Nike, Kobe Bryant had legal issues that kept the Swoosh from giving him his own signature shoe line. In 2004, Kobe Bryant started wearing the Nike Zoom Air Huarache 2K5.
 The 2004-2005 NBA season was the time when Shaq got traded out of the Los Angeles Lakers and the start of the Kobe Bryant era. He would lead the 2004 -2005 NBA season in scoring.`;
 
+    const divSlide7= document.createElement('div');
+    divSlide7.className = "slide";
+    var link7 = document.createElement("button");
+    link7.innerHTML = "Buy";
+    link7.className = "link";
+    divSlide7.appendChild(kobe7);
+    divSlide7.appendChild(kobe7desc);
+    divSlide7.appendChild(link7);
+    link7.addEventListener("click",() =>{
+      window.location = "/html/shoes/Air2k5.html";
+    })
+      carrosel.appendChild(divSlide7);  
+
 var kobe8 = document.createElement("img");
 kobe8.src = "/image/shoes/Nike-Kobe-1.jpg";
 kobe8.className = "shoes";
@@ -196,6 +252,18 @@ kobe8desc.className = "shoes";
 kobe8desc.innerHTML = `<h3>Nike Kobe I</h3>
 While the shoe did not sell particularly well, the Nike Kobe 1 is the start of the eagerly awaited Nike Kobe Bryant signature line. The shoe took design cues from the very popular Nike Huarache series, as designer Ken Link introduced the world to Mamba Mentality in 2005.
 The Nike Kobe 1 is not the most popular, but it will also be remembered as the shoe that Kobe Bryant wore in some of his most iconic scoring moments, including the 62 points he dropped on the Dallas Mavericks and the legendary 81-point game against the Toronto Raptors.`;
+    const divSlide8= document.createElement('div');
+    divSlide8.className = "slide";
+    var link8 = document.createElement("button");
+    link8.innerHTML = "Buy";
+    link8.className = "link";
+    divSlide8.appendChild(kobe7);
+    divSlide8.appendChild(kobe7desc);
+    divSlide8.appendChild(link7);
+    link8.addEventListener("click",() =>{
+      window.location = "/html/shoes/Kobe1.html";
+    })
+      carrosel.appendChild(divSlide8); 
 
 var kobe9 = document.createElement("img");
 kobe9.src = "/image/shoes/Nike-Kobe-2.jpg";
