@@ -25,3 +25,6 @@ Para inicio sofri algumas dificuldades em relacao ao sdk do python
     Hoje consegui retomar o andamento do projeto, consegui criar o carrrosel do produto e posteriormente criei o link de uma pagina ainda em desenvolimento, parei pois necessitava estruturar bem o projeto para que nao chegasse em um estado mais avancado com erros, estou voltando a programacao do mesmo e assim irei continuar.
 <h2>Dia 06:</h2>
     Estou dando continuidade a criacao dos slides do carrosel, hoje nao tive muito tempo para concluir mas acredito que amanha meu dia de folga irei terminar esta parte e partir para a criacao das paginas de cada tenis separadamente, talvez eu modifique cada slide, pois nao esta parecendo um catalogo de produtos, mas sim um de exibicao. estou pensando em criar semelhante ao site da Nike.
+
+<h2>Dia 06:</h2>
+Terminei os sldes e na tentativa de Criar um carrosel com Js acabei gerando elementos invisiveis, agora e estudar para fazer um carrosel correto
