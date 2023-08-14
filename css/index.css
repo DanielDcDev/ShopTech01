@@ -32,3 +32,36 @@
     height: 120px;
     
 }
+
+
+.carrosel {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+.carrosel div {
+    width: 100%;
+    height: 100%;
+    display: none;
+    animation: slideAnimation 1s ease-in-out infinite;
+  }
+  
+  @keyframes slideAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
