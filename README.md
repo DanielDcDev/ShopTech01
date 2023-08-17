@@ -28,3 +28,5 @@ Para inicio sofri algumas dificuldades em relacao ao sdk do python
 
 <h2>Dia 06:</h2>
 Terminei os sldes e na tentativa de Criar um carrosel com Js acabei gerando elementos invisiveis, agora e estudar para fazer um carrosel correto
+<h2>Dia 07:</h2>
+apareceram problemas em algo em que eu acreditava ja saber fazer, porem ao que parece nao sei, terei que reaprender a fazer carroseis, pois estao ocorrendo diversos erros decorrentes da minha falta de dominanca no assunto.

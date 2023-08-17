@@ -6,7 +6,7 @@ var body = document.querySelector("body");
 // welcome.setAttribut = ("id", "welcome");
 // welcome.innerHTML = "Welcome to Kobe Shop";
 // body.appendChild(welcome);
-var carrosel = document.getElementById("carrousel");
+var carrosel = document.getElementById("carrosel");
 
 // criar um novo elemento de lista
 var item = document.createElement("li");
@@ -91,20 +91,17 @@ Although he started his rookie season with the Adidas EQT Elevation, the Adidas 
 Wearing the Adidas KB8, Kobe Bryant became the youngest All-Star at the time. Nearly 20 years later, fans are still rocking Kobe’s first signature shoe now renamed, “Crazy 8.”`
 
 
-    var divSlide = document.createElement("div");
-    divSlide.className = "slide";
-    var link = document.createElement("button");
-    link.innerHTML = "Buy";
-    link.className = "link";
-    divSlide.appendChild(kobe1);
-    divSlide.appendChild(kobe1desc);
-    divSlide.appendChild(link);
-    link.addEventListener("click",() =>{
+    var divSlide1 = document.createElement("div");
+    divSlide1.className = "slide";
+    var link1 = document.createElement("button");
+    link1.innerHTML = "Buy";
+    link1.className = "link";
+    divSlide1.appendChild(kobe1);
+    divSlide1.appendChild(kobe1desc);
+    divSlide1.appendChild(link1);
+    link1.addEventListener("click",() =>{
       window.location = "/html/shoes/EQTE.html";
     })
-
-
-  carrosel.appendChild(divSlide);
 
 var kobe2 = document.createElement("img");
 kobe2.src = "/image/shoes/Adidas-KB8-II.jpg";
@@ -127,7 +124,6 @@ While wearing this sneaker, Kobe Bryant continues to earn more praise, even bein
       window.location = "/html/shoes/KB82.html";
     })
 
-    carrosel.appendChild(divSlide2);
 
 
 var kobe3 = document.createElement("img");
@@ -150,8 +146,7 @@ While wearing the Adidas KB8 III, Kobe Bryant, along with Shaquille O’Neal and
     link3.addEventListener("click",() =>{
       window.location = "/html/shoes/KB83.html";
     })
-
-      carrosel.appendChild(divSlide3);  
+ 
 
 
 
@@ -177,7 +172,6 @@ While wearing the Adidas The Kobe, Kobe Bryant and the Lakers continued their wi
     window.location = "/html/shoes/ADDKobe.html";
   })
 
-    carrosel.appendChild(divSlide4);  
 
 var kobe5 = document.createElement("img");
 kobe5.src = "/image/shoes/Adidas-The-Kobe-2.jpg";
@@ -199,8 +193,7 @@ After beating the New Jersey Nets, Kobe Bryant earns a three-peat after winning 
     link5.addEventListener("click",() =>{
       window.location = "/html/shoes/ADDKobe2.html";
     })
-
-      carrosel.appendChild(divSlide5);  
+ 
 
 
 var kobe6 = document.createElement("img");
@@ -223,7 +216,7 @@ After spending one NBA season as a sneaker free agent between 2002-2003, Kobe jo
     link6.addEventListener("click",() =>{
       window.location = "/html/shoes/Air2k4.html";
     })
-      carrosel.appendChild(divSlide6); 
+
 
 
 var kobe7 = document.createElement("img");
@@ -235,18 +228,18 @@ kobe7desc.innerHTML = `<h3>Nike Zoom Air Huarache 2K5</h3>
 Despite signing with Nike, Kobe Bryant had legal issues that kept the Swoosh from giving him his own signature shoe line. In 2004, Kobe Bryant started wearing the Nike Zoom Air Huarache 2K5.
 The 2004-2005 NBA season was the time when Shaq got traded out of the Los Angeles Lakers and the start of the Kobe Bryant era. He would lead the 2004 -2005 NBA season in scoring.`;
 
-    const divSlide7= document.createElement('div');
-    divSlide7.className = "slide";
-    var link7 = document.createElement("button");
-    link7.innerHTML = "Buy";
-    link7.className = "link";
-    divSlide7.appendChild(kobe7);
-    divSlide7.appendChild(kobe7desc);
-    divSlide7.appendChild(link7);
-    link7.addEventListener("click",() =>{
-      window.location = "/html/shoes/Air2k5.html";
-    })
-      carrosel.appendChild(divSlide7);  
+const divSlide7= document.createElement('div');
+divSlide7.className = "slide";
+var link7 = document.createElement("button");
+link7.innerHTML = "Buy";
+link7.className = "link";
+divSlide7.appendChild(kobe7);
+divSlide7.appendChild(kobe7desc);
+divSlide7.appendChild(link7);
+link7.addEventListener("click",() =>{
+  window.location = "/html/shoes/Air2k5.html";
+})
+
 
 var kobe8 = document.createElement("img");
 kobe8.src = "/image/shoes/Nike-Kobe-1.jpg";
@@ -263,13 +256,13 @@ The Nike Kobe 1 is not the most popular, but it will also be remembered as the s
     var link8 = document.createElement("button");
     link8.innerHTML = "Buy";
     link8.className = "link";
-    divSlide8.appendChild(kobe7);
-    divSlide8.appendChild(kobe7desc);
-    divSlide8.appendChild(link7);
+    divSlide8.appendChild(kobe8);
+    divSlide8.appendChild(kobe8desc);
+    divSlide8.appendChild(link8);
     link8.addEventListener("click",() =>{
       window.location = "/html/shoes/Kobe1.html";
     })
-      carrosel.appendChild(divSlide8); 
+
 
 var kobe9 = document.createElement("img");
 kobe9.src = "/image/shoes/Nike-Kobe-2.jpg";
@@ -291,7 +284,7 @@ First introduced in 2006 on Christmas against the Miami Heat, Kobe Bryant would 
     link9.addEventListener("click",() =>{
       window.location = "/html/shoes/Kobe2.html";
     })
-      carrosel.appendChild(divSlide9); 
+
 
 var kobe10 = document.createElement("img");
 kobe10.src = "/image/shoes/Nike-Kobe-3.jpg";
@@ -313,7 +306,7 @@ Released between 2007-2008, The Nike Kobe 3 is one of Kobe Bryant’s favorite s
     link10.addEventListener("click",() =>{
       window.location = "/html/shoes/Kobe3.html";
     })
-      carrosel.appendChild(divSlide10);
+
       
 var kobe11 = document.createElement("img");
 kobe11.src = "/image/shoes/Nike-Kobe-4.jpg";
@@ -337,7 +330,7 @@ The gamble paid off, as it dismissed the myth that wearing low-top basketball sh
     link11.addEventListener("click",() =>{
       window.location = "/html/shoes/Kobe4.html";
     })
-      carrosel.appendChild(divSlide11);
+
 
 
 var kobe12 = document.createElement("img");
@@ -362,7 +355,7 @@ One unique aspect of the shoe is the glass/carbon fiber plate in the mid-foot th
     link12.addEventListener("click",() =>{
       window.location = "/html/shoes/Kobe5.html";
     })
-      carrosel.appendChild(divSlide12);
+
 
 
 var kobe13 = document.createElement("img");
@@ -387,7 +380,7 @@ The Grinch Kobe 6, was perhaps one of Kobe’s most iconic sneakers ever to grac
     link13.addEventListener("click",() =>{
       window.location = "/html/shoes/Kobe6.html";
     })
-      carrosel.appendChild(divSlide13);
+
 
 var kobe14 = document.createElement("img");
 kobe14.src = "/image/shoes/Nike-Kobe-7.jpg";
@@ -410,7 +403,7 @@ Debuted in late 2011, the Nike Kobe 7 is the shoe Kobe Bryant wore as he won his
     link14.addEventListener("click",() =>{
       window.location = "/html/shoes/Kobe7.html";
     })
-      carrosel.appendChild(divSlide14);
+
 
 
 var kobe15 = document.createElement("img");
@@ -433,7 +426,7 @@ In December 2012, Nike created a Kobe shoe lighter than ever before, using engin
     link15.addEventListener("click",() =>{
       window.location = "/html/shoes/Kobe8.html";
     })
-      carrosel.appendChild(divSlide15);
+
 
 
 var kobe16 = document.createElement("img");
@@ -457,7 +450,7 @@ Pushing the boundaries of basketball innovation, the Nike Kobe 9 introduced a hi
     link16.addEventListener("click",() =>{
       window.location = "/html/shoes/Kobe9.html";
     })
-      carrosel.appendChild(divSlide16);
+
 
 
 var kobe17 = document.createElement("img");
@@ -482,7 +475,7 @@ One famous moment of the Nike Kobe 10 was when Kobe Bryan hit the clutch three-p
     link17.addEventListener("click",() =>{
       window.location = "/html/shoes/Kobe10.html";
     })
-      carrosel.appendChild(divSlide17);
+
 
       
 
@@ -507,7 +500,7 @@ The Nike Kobe 11 is the shoe that Kobe wore in his final NBA game. In what was a
     link18.addEventListener("click",() =>{
       window.location = "/html/shoes/Kobe11.html";
     })
-    carrosel.appendChild(divSlide18);
+
 
 
 var kobe19 = document.createElement("img");
@@ -530,7 +523,7 @@ Released on November 22nd, 2016, the Nike Kobe A.D. is a continuation of the spi
     link19.addEventListener("click",() =>{
       window.location = "/html/shoes/KobeAD.html";
     })
-      carrosel.appendChild(divSlide19);
+
 
 var kobe20 = document.createElement("img");
 kobe20.src = "/image/shoes/Nike-Kobe-A.D.-NXT.jpg";
@@ -546,13 +539,13 @@ The shoe features a quick and intuitive laceless system, which is not well-recei
     var link20 = document.createElement("button");
     link20.innerHTML = "Buy";
     link20.className = "link";
-    divSlide20.appendChild(kobe13);
-    divSlide20.appendChild(kobe13desc);
-    divSlide20.appendChild(link13);
+    divSlide20.appendChild(kobe20);
+    divSlide20.appendChild(kobe20desc);
+    divSlide20.appendChild(link20);
     link20.addEventListener("click",() =>{
       window.location = "/html/shoes/ADNXT.html";
     })
-      carrosel.appendChild(divSlide20);
+
 
 var kobe25 = document.createElement("img");
 kobe25.src = "/image/shoes/Nike-Kobe-A.D.-Mid.jpg";
@@ -574,7 +567,7 @@ Offering an ultra-thin feel, the Nike Kobe A.D. Mid is also supportive thanks to
     link25.addEventListener("click",() =>{
       window.location = "/html/shoes/KobeADMID.html";
     })
-      carrosel.appendChild(divSlide25);
+
 
 var kobe21 = document.createElement("img");
 kobe21.src = "/image/shoes/Nike-Kobe-A.D.-NXT-360.jpg";
@@ -596,7 +589,7 @@ The addition of Nike’s Lunarlon technology is widely considered by many people
     link21.addEventListener("click",() =>{
       window.location = "/html/shoes/ADN360.html";
     })
-      carrosel.appendChild(divSlide21);
+
 
 var kobe22 = document.createElement("img");
 kobe22.src = "/image/shoes/Nike-Kobe-A.D.-Exodus.jpg";
@@ -618,7 +611,7 @@ const divSlide22= document.createElement('div');
     link22.addEventListener("click",() =>{
       window.location = "/html/shoes/ADExodus.html";
     })
-      carrosel.appendChild(divSlide22);
+
 
 var kobe23 = document.createElement("img");
 kobe23.src = "/image/shoes/Nike-Kobe-A.D.-NXT-FastFit.jpg";
@@ -639,7 +632,7 @@ const divSlide23= document.createElement('div');
     link23.addEventListener("click",() =>{
       window.location = "/html/shoes/ADNXTFF.html";
     })
-      carrosel.appendChild(divSlide23);
+
 
 var kobe24 = document.createElement("img");
 kobe24.src = "/image/shoes/nike-kobe-mamba-fury.jpg";
@@ -661,53 +654,50 @@ Although it is a budget basketball sneaker, several NBA players have been seen d
     link24.addEventListener("click",() =>{
       window.location = "/html/shoes/MambaFury.html";
     })
-      carrosel.appendChild(divSlide24);
+
 
 
 
 var  prevButton = document.createElement("button");
-prevButton.className = "prev-button";
+prevButton.className = "buttonOut";
 prevButton.innerHTML = `previus`;
 var  nxtButton = document.createElement("button");
-nxtButton.className = "nxt-button";
+nxtButton.className = "buttonOut";
 nxtButton.innerHTML = `next`;
 
 /*creating of slider */
+const slides = [
+  divSlide1, divSlide2, divSlide3, divSlide4, divSlide5, divSlide6, 
+  divSlide7, divSlide8, divSlide9, divSlide10, divSlide11, divSlide12, 
+  divSlide13, divSlide14, divSlide15, divSlide16, divSlide17, divSlide18, 
+  divSlide19, divSlide20, divSlide21, divSlide22, divSlide23, divSlide24, divSlide25
+];
+let currentIndex = 0;
+
+slides.forEach((slide, index) => {
+  slide.style.left = `${index * 100}%`;
+  carrosel.appendChild(slide);
+});
+
+function showSlide(index) {
+  carrosel.style.transform = `translateX(-${index * 100}%)`;
+}
+
+prevButton.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
+});
+
+nxtButton.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+});
+
+// Mostra o slide inicial
+showSlide(currentIndex);
 /*creating of slider */
+
+
 
 carrosel.appendChild(prevButton);
 carrosel.appendChild(nxtButton);
-
-// Selecione os elementos HTML relevantes
-const slides = Array.from(carrosel.children);
-
-// Defina a largura do carrossel baseado no número de slides
-const slideWidth = slides[0].getBoundingClientRect().width;
-carrosel.style.width = `${slideWidth * slides.length}px`;
-slides[0].classList.add('current-slide');
-
-// Posicione os slides um ao lado do outro
-slides.forEach((slide, index) => {
-  slide.style.left = `${slideWidth * index}px`;
-  slide.style.display = 'block';
-});
-
-// Função para avançar o carrossel para o próximo slide
-const moveToNextSlide = () => {
-  const currentSlide = carrosel.querySelector('.current-slide');
-  const nextSlide = currentSlide.nextElementSibling || slides[0];
-
-  // Move o carrossel para a esquerda
-  carrosel.style.transform = `translateX(-${nextSlide.style.left})`;
-
-  // Atualiza as classes dos slides
-  currentSlide.classList.remove('current-slide');
-  nextSlide.classList.add('current-slide');
-};
-function nextSlide() {
-  carrosel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
-}
-
-// Define um intervalo para avançar o carrossel automaticamente
-setInterval(moveToNextSlide, 3000);
-
