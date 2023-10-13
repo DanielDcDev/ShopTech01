@@ -1,8 +1,8 @@
 const express = require('express');
 const server = express();
-const shoes = require('./')
+const shoes = require('../shoes.json')
 server.get('/usuario', (req, res) =>{
-    return res.json({usuario: 'Daniel Caio'})
+    return res.json({shoes})
 })
 
 server.listen(3000, ()=>{
