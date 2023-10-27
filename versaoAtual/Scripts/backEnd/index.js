@@ -1,6 +1,7 @@
 const express = require('express');
 const server = express();
-const shoes = require('../shoes.json')
+const shoes = require('/data/shoes.json')
+
 server.get('/usuario', (req, res) =>{
     return res.json({shoes})
 })
